@@ -211,7 +211,7 @@
 .shoreline-tag {
   filter: brightness(0) invert(1) !important;
   user-select: none;
-  transition: transform .2s;
+  transition: transform .5s !important;
 }
 
 

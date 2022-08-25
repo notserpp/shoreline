@@ -239,6 +239,7 @@ export default function Album(props) {
                                     <Typography
                                         variant="h2"
                                         sx={{ textDecoration: 'underline 3px' }}
+                                        fontSize={{ xs: '1rem', sm: '1.5rem', md: '2rem', lg: '3rem' }}
                                     >
                                         Meet Shoreline
                                     </Typography>
@@ -247,7 +248,7 @@ export default function Album(props) {
                                     <Typography
                                         className="baikal"
                                         variant="overline"
-                                        fontSize="20px"
+                                        fontSize={{ xs: '1rem', sm: '1.5rem', md: '2rem', lg: '1.5rem' }}
                                     >
                                         <b>Our Values</b> are the core set of
                                         beliefs that we stand for and
@@ -276,7 +277,7 @@ export default function Album(props) {
                                                     <Typography
                                                         className="baikal"
                                                         variant="overline"
-                                                        fontSize="15px"
+                                                        fontSize={{ xs: '1rem', sm: '1.5rem', md: '2rem', lg: '1rem' }}
                                                     >
                                                         Our Personality + Tone
                                                     </Typography>
@@ -294,6 +295,7 @@ export default function Album(props) {
                                                         variant="h2"
                                                         sx={{ textDecoration: 'underline 3px', pb: 3 }}
                                                         className="hover"
+                                                        fontSize={{ xs: '1rem', sm: '1.5rem', md: '2rem', lg: '3rem' }}
                                                     >
                                                         Fun
                                                     </Typography>
@@ -310,6 +312,7 @@ export default function Album(props) {
                                                         variant="h2"
                                                         sx={{ textDecoration: 'underline 3px', pb: 3 }}
                                                         className="hover"
+                                                        fontSize={{ xs: '1rem', sm: '1.5rem', md: '2rem', lg: '3rem' }}
                                                     >
                                                         Courage
                                                     </Typography>
@@ -326,6 +329,7 @@ export default function Album(props) {
                                                         variant="h2"
                                                         sx={{ textDecoration: 'underline 3px', pb: 3 }}
                                                         className="hover"
+                                                        fontSize={{ xs: '1rem', sm: '1.5rem', md: '2rem', lg: '3rem' }}
                                                     >
                                                         Responsibility
                                                     </Typography>
@@ -342,6 +346,7 @@ export default function Album(props) {
                                                         variant="h2"
                                                         sx={{ textDecoration: 'underline 3px', pb: 3 }}
                                                         className="hover"
+                                                        fontSize={{ xs: '1rem', sm: '1.5rem', md: '2rem', lg: '3rem' }}
                                                     >
                                                         Freedom
                                                     </Typography>
@@ -358,6 +363,7 @@ export default function Album(props) {
                                                         variant="h2"
                                                         sx={{ textDecoration: 'underline 3px', pb: 3 }}
                                                         className="hover"
+                                                        fontSize={{ xs: '1rem', sm: '1.5rem', md: '2rem', lg: '3rem' }}
                                                     >
                                                         Authenticity
                                                     </Typography>
@@ -374,6 +380,7 @@ export default function Album(props) {
                                                         variant="h2"
                                                         sx={{ textDecoration: 'underline 3px', pb: 3 }}
                                                         className="hover"
+                                                        fontSize={{ xs: '1rem', sm: '1.5rem', md: '2rem', lg: '3rem' }}
                                                     >
                                                         Reliability
                                                     </Typography>
@@ -390,6 +397,7 @@ export default function Album(props) {
                                                         variant="h2"
                                                         sx={{ textDecoration: 'underline 3px', pb: 3 }}
                                                         className="hover"
+                                                        fontSize={{ xs: '1rem', sm: '1.5rem', md: '2rem', lg: '3rem' }}
                                                     >
                                                         Optimism
                                                     </Typography>
@@ -480,7 +488,7 @@ export default function Album(props) {
                                     <Typography
                                         className="baikal"
                                         variant="overline"
-                                        fontSize="20px"
+                                        fontSize={{ xs: '1rem', sm: '1.5rem', md: '2rem', lg: '1.5rem' }}
                                     >
                                         <b>Our Personality</b> is made up of
                                         the four words our friends would
@@ -499,7 +507,7 @@ export default function Album(props) {
                                     <Typography
                                         className="baikal"
                                         variant="overline"
-                                        fontSize="20px"
+                                        fontSize={{ xs: '1rem', sm: '1.5rem', md: '2rem', lg: '1.5rem' }}
                                     >
                                         <b>Our Tone</b> influences the laguage
                                         we use when interacting with our
@@ -516,15 +524,7 @@ export default function Album(props) {
             {/* Footer */}
             <Box sx={{ bgcolor: 'background.paper', p: 6 }} component="footer">
                 <Typography variant="h6" align="center" gutterBottom>
-                    Footer
-                </Typography>
-                <Typography
-                    variant="subtitle1"
-                    align="center"
-                    color="text.secondary"
-                    component="p"
-                >
-                    Something here to give the footer a purpose!
+                    FIND YOUR SHORELINE
                 </Typography>
                 <Copyright />
             </Box>
