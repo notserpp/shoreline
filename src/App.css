@@ -13,6 +13,251 @@
   }
 }
 
+@font-face {
+  font-family: 'Migra';
+  src: url("../public/fonts/MigraItalic-ExtralightItalic.otf") format("opentype");
+}
+
+
+
+@font-face {
+  font-family: 'Migra';
+  src: url("../public/fonts/MigraItalic-ExtralightItalic.otf") format("opentype");
+}
+
+@font-face {
+  font-family: 'Baikal';
+  src: url("../public/fonts/BaikalTrial-Light.otf") format("opentype");
+}
+
+
+@keyframes slide-left {
+  from {
+    margin-left: 50%;
+    opacity: 0%;
+  }
+
+  to {
+    margin-left: 0%;
+    opacity: 100%;
+  }
+}
+
+@keyframes slide-right {
+  from {
+    margin-right: 50%;
+    opacity: 0%;
+  }
+
+  to {
+    margin-right: 0%;
+    opacity: 100%;
+  }
+}
+
+@keyframes slide-left-50-p {
+  from {
+    margin-left: 80%;
+    opacity: 0%;
+  }
+
+  to {
+    margin-left: 30%;
+    opacity: 100%;
+  }
+}
+
+@keyframes slide-left-opacity-50 {
+  from {
+    margin-left: 50%;
+    opacity: 0%;
+  }
+
+  to {
+    margin-left: 0%;
+    opacity: 50%;
+  }
+}
+
+@keyframes slide-left-opacity-60 {
+  from {
+    margin-left: 25%;
+    opacity: 0%;
+  }
+
+  to {
+    margin-left: 0%;
+    opacity: 60%;
+  }
+}
+
+@keyframes slide-down {
+  from {
+    margin-bottom: 25%;
+  }
+
+  to {
+    margin-bottom: 0%;
+  }
+}
+
+@keyframes opacity-10 {
+  from {
+    opacity: 0%;
+  }
+
+  to {
+    opacity: 100%;
+  }
+}
+
+.london-dry {
+  width: 80%;
+  animation: opacity-10 2.1s;  
+}
+
+.london-dry-can {
+  position: absolute;
+  width: 40%;
+  top: 0%;
+  left: 30%;
+  animation: opacity-10 2.1s;
+}
+
+.box-can-container {
+  position: relative;
+}
+
+.slide-left{
+  animation: slide-left 2s;
+}
+
+.slide-right{
+  animation: slide-right 2s;
+}
+
+
+.migra {
+  font-family: 'Migra' !important;
+  color: white !important;
+}
+
+.box-can-container {
+  position: relative;
+  
+}
+
+.box-can-container .london-dry {
+  opacity: 1;
+  transition: opacity 5s;
+}
+
+.box-can-container .london-dry-can {
+  position: absolute;
+  left: 10;
+  top: 0;
+  
+  transition: opacity 1s;
+}
+
+.box-can-container:hover .london-dry {
+  opacity: 0;
+  transition: opacity 1s;
+  
+}
+
+.box-can-container:hover .london-dry-can {
+  opacity: 1;
+  display: block;
+  transition: opacity 1s;
+  transition: display 1s;
+}
+
+.baikal {
+  font-family: 'Baikal' !important;
+}
+
+.about-body{
+  font-size: 500px;
+}
+
+
+.nav-text {
+  font-family: 'Baikal' !important;
+  transition: transform .2s;
+  text-shadow: 1px 1px #00000010;
+}
+
+.navbar {
+  padding-top: 1%;
+  position: absolute !important;
+  background-color: transparent !important;
+  
+}
+
+.slide-down{
+  animation: slide-left 2.1;
+}
+
+.nav-text:hover {
+  transform: scale(1.1);
+}
+
+.hover:hover {
+  transition: transform .2s;
+  transform: scale(1.1);
+}
+
+.shoreline-tag {
+  filter: brightness(0) invert(1) !important;
+  user-select: none;
+  transition: transform .2s;
+}
+
+
+.shoreline-tag:hover {
+  transform: scale(1.02);
+}
+
+.shoreline-logo:hover {
+  transform: scale(1.02);
+}
+
+.hibiscus-seal {
+  opacity: 50%;
+  user-select: none;
+}
+
+.shoreline-bg {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+.age-restriction {
+  font-family: 'Baikal';
+  user-select: none;
+  letter-spacing: 5px !important;
+}
+
+.age-restriction-box {
+  margin-top: 1%;
+  width: 40% !important;
+}
+
+.find-your {
+  opacity: 90%;
+  user-select: none;
+}
+
+.shoreline-logo{
+  filter: brightness(0) invert(1);
+  margin-left: 5px;
+  margin-right: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -24,15 +269,24 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.middle{
+  text-align: center;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 100%;
+  height: 80vh;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.center{
+  text-align: center;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.App-link {
+  color: #61dafb;
 }
