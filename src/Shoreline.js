@@ -175,7 +175,7 @@ export default function Album(props) {
                                         </Fade>
                                     }
                                 </VisibilitySensor>
-                                <Container className="age-restriction-box animation">
+                                <Container className="age-restriction-box animation" sx={{ pt: 12 }}>
                                     <VisibilitySensor>
                                         {({ isVisible }) =>
                                             <Fade in={isVisible} direction="down" timeout={1000}>
