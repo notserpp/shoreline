@@ -439,7 +439,7 @@ export default function Album(props) {
             </main>
             {/* Footer */}
             <Box sx={{ bgcolor: 'background.paper', pt: 4 }} component="footer" className="center">
-                <IconButton href="https://instagram.com" target="_blank">
+                <IconButton href="https://www.instagram.com/drinkshoreline/" target="_blank">
                     <InstagramIcon />
                 </IconButton>
                 <Typography fontFamily="Carter One" align="center" sx={{ pb: 4 }}>
