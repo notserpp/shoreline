@@ -99,17 +99,17 @@ export default function Album(props) {
                 <AppBar className="navbar" sx={{ boxShadow: 'none' }}>
                     <Toolbar className="center">
                         <MenuItem className="menu-item" >
-                            <Typography color="inherit" noWrap className="nav-text" onClick={londonScroll} fontSize={{ xs: '1rem', sm: '1.5rem', md: '2rem', lg: '1.5rem' }} display={{ xs: 'none', sm: 'none', md: 'block', lg: 'block' }}>
+                            <Typography fontFamily="Carter One" noWrap className="nav-text" onClick={londonScroll} fontSize={{ xs: '1rem', sm: '1.5rem', md: '2rem', lg: '1.5rem' }} display={{ xs: 'none', sm: 'none', md: 'block', lg: 'block' }}>
                                 London Dry
                             </Typography>
                         </MenuItem>
                         <MenuItem className="menu-item">
-                            <Typography color="inherit" noWrap className="nav-text" onClick={hibiscusScroll} fontSize={{ xs: '1rem', sm: '1.5rem', md: '2rem', lg: '1.5rem' }} display={{ xs: 'none', sm: 'none', md: 'block', lg: 'block' }}>
+                            <Typography color="inherit" fontFamily="Carter One" noWrap className="nav-text" onClick={hibiscusScroll} fontSize={{ xs: '1rem', sm: '1.5rem', md: '2rem', lg: '1.5rem' }} display={{ xs: 'none', sm: 'none', md: 'block', lg: 'block' }}>
                                 Berry Hibiscus
                             </Typography>
                         </MenuItem>
                         <MenuItem className="menu-item">
-                            <Typography color="inherit" noWrap className="nav-text" fontSize={{ xs: '1rem', sm: '1.5rem', md: '2rem', lg: '1.5rem' }} display={{ xs: 'none', sm: 'none', md: 'block', lg: 'block' }}>
+                            <Typography color="inherit" fontFamily="Carter One" noWrap className="nav-text" fontSize={{ xs: '1rem', sm: '1.5rem', md: '2rem', lg: '1.5rem' }} display={{ xs: 'none', sm: 'none', md: 'block', lg: 'block' }}>
                                 About
                             </Typography>
                         </MenuItem>
@@ -350,11 +350,10 @@ export default function Album(props) {
                             <Container >
                                 <Box sx={{ pb: 3 }}>
                                     <Typography
-                                        variant="h2"
-                                        sx={{ textDecoration: 'underline 1px' }}
+                                        fontFamily="Titan One"
                                         fontSize={{ xs: '1rem', sm: '1.5rem', md: '2rem', lg: '3rem' }}
                                     >
-                                        Meet Shoreline
+                                        MEET SHORELINE
                                     </Typography>
                                 </Box>
                                 <Box>
@@ -380,10 +379,8 @@ export default function Album(props) {
                                         <Fade in={isVisible} direction="down" timeout={1000}>
                                             <Box>
                                                 <Typography
-                                                    className="baikal"
-                                                    variant="overline"
-                                                    fontSize="15px"
-                                                    sx={{ textDecoration: 'underline 1px' }}
+                                                    fontFamily="Titan One"
+                                                    fontSize={{ xs: '1rem', sm: '1.5rem', md: '2rem', lg: '1.5rem' }}
 
                                                 >
                                                     Our Mission + Vision
@@ -445,7 +442,7 @@ export default function Album(props) {
                 <IconButton href="https://instagram.com" target="_blank">
                     <InstagramIcon />
                 </IconButton>
-                <Typography fontFamily="Baikal" align="center" sx={{ pb: 4 }}>
+                <Typography fontFamily="Carter One" align="center" sx={{ pb: 4 }}>
                     <Link href="mailto: hello@drinkshoreline.com">HELLO@DRINKSHORELINE.COM</Link>
                 </Typography>
                 <Divider />
