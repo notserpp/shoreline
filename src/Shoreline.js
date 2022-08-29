@@ -1,6 +1,7 @@
 import * as React from 'react';
 import AppBar from '@mui/material/AppBar';
 import Button from '@mui/material/Button';
+import Paper from '@mui/material/Paper';
 import CameraIcon from '@mui/icons-material/PhotoCamera';
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
@@ -19,6 +20,7 @@ import Slide from '@mui/material/Slide';
 import { createTheme, ThemeProvider, responsiveFontSizes } from '@mui/material/styles';
 import { Divider, MenuItem } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
+import InstagramIcon from '@mui/icons-material/Instagram';
 import ShorelineBG1 from './ShorelineBG1.jpg';
 import GlassesBG from './openwater.jpg';
 import BeachBG from './beach.jpg';
@@ -26,6 +28,8 @@ import useScrollTrigger from '@mui/material/useScrollTrigger';
 import PropTypes from 'prop-types';
 import VisibilitySensor from 'react-visibility-sensor';
 import Fade from '@mui/material/Fade';
+import Carousel from 'react-material-ui-carousel'
+
 
 function HideOnScroll(props) {
     const { children, window } = props;
@@ -74,6 +78,11 @@ theme = responsiveFontSizes(theme);
 
 export default function Album(props) {
 
+    const londonRef = React.useRef(null)
+    const hibiscusRef = React.useRef(null)
+    const londonScroll = () => londonRef.current.scrollIntoView()
+    const hibiscusScroll = () => hibiscusRef.current.scrollIntoView()
+
     const [checked, setChecked] = React.useState(false);
 
     const handleChange = (isVisible) => {
@@ -90,12 +99,12 @@ export default function Album(props) {
                 <AppBar className="navbar" sx={{ boxShadow: 'none' }}>
                     <Toolbar className="center">
                         <MenuItem className="menu-item" >
-                            <Typography color="inherit" noWrap className="nav-text" fontSize={{ xs: '1rem', sm: '1.5rem', md: '2rem', lg: '1.5rem' }} display={{ xs: 'none', sm: 'none', md: 'block', lg: 'block' }}>
+                            <Typography color="inherit" noWrap className="nav-text" onClick={londonScroll} fontSize={{ xs: '1rem', sm: '1.5rem', md: '2rem', lg: '1.5rem' }} display={{ xs: 'none', sm: 'none', md: 'block', lg: 'block' }}>
                                 London Dry
                             </Typography>
                         </MenuItem>
                         <MenuItem className="menu-item">
-                            <Typography color="inherit" noWrap className="nav-text" fontSize={{ xs: '1rem', sm: '1.5rem', md: '2rem', lg: '1.5rem' }} display={{ xs: 'none', sm: 'none', md: 'block', lg: 'block' }}>
+                            <Typography color="inherit" noWrap className="nav-text" onClick={hibiscusScroll} fontSize={{ xs: '1rem', sm: '1.5rem', md: '2rem', lg: '1.5rem' }} display={{ xs: 'none', sm: 'none', md: 'block', lg: 'block' }}>
                                 Berry Hibiscus
                             </Typography>
                         </MenuItem>
@@ -132,21 +141,7 @@ export default function Album(props) {
                     <Grid container spacing={2} className="middle">
                         <Grid item lg={7} md={10} sm={10} xs={12} >
                             <Container >
-                                <VisibilitySensor>
-                                    {({ isVisible }) =>
-                                        <Fade in={isVisible} direction="down" timeout={1000}>
-                                            <Box
-                                                component="img"
-                                                sx={{
-                                                    width: { xs: '50%', sm: '25%', md: '18%', lg: '20%' },
-                                                }}
-                                                alt="Hibiscus."
-                                                src="/images/HibiscusSeal.png"
-                                                className="hibiscus-seal"
-                                            />
-                                        </Fade>
-                                    }
-                                </VisibilitySensor>
+
                                 <VisibilitySensor>
                                     {({ isVisible }) =>
                                         <Fade in={isVisible} direction="down" timeout={1000}>
@@ -175,7 +170,7 @@ export default function Album(props) {
                                         </Fade>
                                     }
                                 </VisibilitySensor>
-                                <Container className="age-restriction-box animation" sx={{ pt: 12 }}>
+                                <Container className="age-restriction-box animation" sx={{ pt: 3 }}>
                                     <VisibilitySensor>
                                         {({ isVisible }) =>
                                             <Fade in={isVisible} direction="down" timeout={1000}>
@@ -226,11 +221,129 @@ export default function Album(props) {
 
                 </Box>
                 {/* Hero unit */}
+                <Box sx={{ backgroundColor: "#FFF7F0", height: '70vh' }} >
+                    <Grid container spacing={2} className="center" >
+                        <Grid item lg={5}>
+                            <VisibilitySensor>
+                                {({ isVisible }) =>
+                                    <Fade in={isVisible} direction="down" timeout={1000}>
+                                        <Container sx={{ pt: 3 }}>
+                                            <Box
+                                                component="img"
+                                                sx={{
+                                                    width: { xs: '20%', sm: '20%', md: '20%', lg: '70%' },
+                                                }}
+                                                alt="Hibiscus"
+                                                src="/images/london_nobg.png"
+                                                ref={londonRef}
+                                                className="rotate-0"
+                                            />
+                                            <Typography
+                                                fontFamily="Titan One"
+                                            >
+                                                6.6% ABV | 1G Sugar
+                                            </Typography>
+                                        </Container>
+                                    </Fade>
+                                }
+                            </VisibilitySensor>
+                        </Grid>
+                        <Grid item lg={6} >
+                            <Typography
+                                fontFamily="Rubik Mono One"
+                                fontSize="3rem"
+                            >
+                                The London Dry
+                            </Typography>
+                            <Typography
+                                fontFamily="Baikal"
+                                fontSize="1.2rem"
+                            >
+                                An approachable dry cider with a bright acidity profile balanced by just a touch of apple sweetness. The profile begins with notes of crisp honeyed apples, the finish is reminiscent of a refreshing sauvignon blanc. Easy drinking and clean, this cider would be as at home next to a charcuterie board as it is with barbecue fare.
+                            </Typography>
+                            <Typography
+                                sx={{ pt: 2 }}
+                                fontFamily="Baikal"
+                            >
+                                Suggested Food Pairings:
+                            </Typography>
+                            <Typography
+                                fontFamily="Baikal-Bold"
+                            >
+                                Aged Hard Cheeses | Smoked Brisket
+                            </Typography>
+                        </Grid>
+
+                    </Grid>
+                </Box>
+
+                <Box sx={{ backgroundColor: "#8c1d24", height: '70vh' }}>
+                    <Grid container spacing={2} className="center" >
+                        <Grid item lg={6}>
+                            <Typography
+                                fontFamily="Rubik Mono One"
+                                fontSize="3rem"
+                                color="white"
+                            >
+                                The Hibiscus Blueberry
+                            </Typography>
+                            <Typography
+                                fontFamily="Baikal"
+                                fontSize="1.2rem"
+                                color="white"
+                            >
+                                An approachable dry cider with a bright acidity profile balanced by just a touch of apple sweetness. The profile begins with notes of crisp honeyed apples, the finish is reminiscent of a refreshing sauvignon blanc. Easy drinking and clean, this cider would be as at home next to a charcuterie board as it is with barbecue fare.
+                            </Typography>
+                            <Typography
+                                sx={{ pt: 2 }}
+                                fontFamily="Baikal"
+                                color="white"
+                            >
+                                Suggested Food Pairings:
+                            </Typography>
+                            <Typography
+                                fontFamily="Baikal-Bold"
+                                color="white"
+                            >
+                                Tea Cakes | Roasted Pork | Bloomy Rind Cheeses
+                            </Typography>
+                        </Grid>
+                        <Grid item lg={5}>
+                            <VisibilitySensor>
+                                {({ isVisible }) =>
+                                    <Fade in={isVisible} direction="down" timeout={1000}>
+                                        <Container sx={{ pt: 3 }}>
+                                            <Box
+                                                component="img"
+                                                sx={{
+                                                    width: { xs: '20%', sm: '20%', md: '20%', lg: '70%' },
+                                                }}
+                                                alt="Hibiscus"
+                                                src="/images/hibiscus_nobg.png"
+                                                ref={hibiscusRef}
+                                                className="rotate-20"
+                                            />
+                                            <Typography
+                                                fontFamily="Titan One"
+                                                color="white"
+                                            >
+                                                5.4% ABV | 6G Sugar | Made with real fruit | Gluten free
+                                            </Typography>
+                                        </Container>
+                                    </Fade>
+                                }
+                            </VisibilitySensor>
+                        </Grid>
+
+                    </Grid>
+                </Box>
+
                 <Box
                     style={{
                         backgroundColor: "#FFF7F0",
                         backgroundSize: "cover",
-                        height: "80vh"
+                        height: "80vh",
+                        backgroundImage: `url(${GlassesBG})`,
                     }} >
                     <Grid container spacing={0} className="middle">
                         <Grid item lg={6} md={6} sm={6} xs={6} >
@@ -238,7 +351,7 @@ export default function Album(props) {
                                 <Box sx={{ pb: 3 }}>
                                     <Typography
                                         variant="h2"
-                                        sx={{ textDecoration: 'underline 3px' }}
+                                        sx={{ textDecoration: 'underline 1px' }}
                                         fontSize={{ xs: '1rem', sm: '1.5rem', md: '2rem', lg: '3rem' }}
                                     >
                                         Meet Shoreline
@@ -257,169 +370,8 @@ export default function Album(props) {
                                         and interaction with our world.
                                     </Typography>
                                 </Box>
-                                <Box
-                                    component="img"
-                                    sx={{
-                                        width: { xs: '50%', sm: '25%', md: '18%', lg: '60%' },
-                                    }}
-                                    alt="HB_Sea"
-                                    src="/images/HB_Sea.png"
-                                />
                             </Container>
                         </Grid>
-                        <Grid item lg={6} md={6} sm={6} xs={6} display={{ xs: 'none', sm: 'none', md: 'none', lg: 'block' }} >
-                            <Container>
-                                <Container>
-                                    <VisibilitySensor>
-                                        {({ isVisible }) =>
-                                            <Fade in={isVisible} direction="down" timeout={1000}>
-                                                <Box>
-                                                    <Typography
-                                                        className="baikal"
-                                                        variant="overline"
-                                                        fontSize={{ xs: '1rem', sm: '1.5rem', md: '2rem', lg: '1rem' }}
-                                                    >
-                                                        Our Personality + Tone
-                                                    </Typography>
-                                                </Box>
-                                            </Fade>
-                                        }
-                                    </VisibilitySensor>
-                                </Container>
-                                <Container sx={{ width: '50%' }} >
-                                    <VisibilitySensor>
-                                        {({ isVisible }) =>
-                                            <Fade in={isVisible} direction="down" timeout={1000}>
-                                                <Box>
-                                                    <Typography
-                                                        variant="h2"
-                                                        sx={{ textDecoration: 'underline 3px', pb: 3 }}
-                                                        className="hover"
-                                                        fontSize={{ xs: '1rem', sm: '1.5rem', md: '2rem', lg: '3rem' }}
-                                                    >
-                                                        Fun
-                                                    </Typography>
-                                                </Box>
-                                            </Fade>
-                                        }
-                                    </VisibilitySensor>
-
-                                    <VisibilitySensor>
-                                        {({ isVisible }) =>
-                                            <Fade in={isVisible} direction="down" timeout={1000}>
-                                                <Box>
-                                                    <Typography
-                                                        variant="h2"
-                                                        sx={{ textDecoration: 'underline 3px', pb: 3 }}
-                                                        className="hover"
-                                                        fontSize={{ xs: '1rem', sm: '1.5rem', md: '2rem', lg: '3rem' }}
-                                                    >
-                                                        Courage
-                                                    </Typography>
-                                                </Box>
-                                            </Fade>
-                                        }
-                                    </VisibilitySensor>
-
-                                    <VisibilitySensor>
-                                        {({ isVisible }) =>
-                                            <Fade in={isVisible} direction="down" timeout={1000}>
-                                                <Box>
-                                                    <Typography
-                                                        variant="h2"
-                                                        sx={{ textDecoration: 'underline 3px', pb: 3 }}
-                                                        className="hover"
-                                                        fontSize={{ xs: '1rem', sm: '1.5rem', md: '2rem', lg: '3rem' }}
-                                                    >
-                                                        Responsibility
-                                                    </Typography>
-                                                </Box>
-                                            </Fade>
-                                        }
-                                    </VisibilitySensor>
-
-                                    <VisibilitySensor>
-                                        {({ isVisible }) =>
-                                            <Fade in={isVisible} direction="down" timeout={1000}>
-                                                <Box>
-                                                    <Typography
-                                                        variant="h2"
-                                                        sx={{ textDecoration: 'underline 3px', pb: 3 }}
-                                                        className="hover"
-                                                        fontSize={{ xs: '1rem', sm: '1.5rem', md: '2rem', lg: '3rem' }}
-                                                    >
-                                                        Freedom
-                                                    </Typography>
-                                                </Box>
-                                            </Fade>
-                                        }
-                                    </VisibilitySensor>
-
-                                    <VisibilitySensor>
-                                        {({ isVisible }) =>
-                                            <Fade in={isVisible} direction="down" timeout={1000}>
-                                                <Box>
-                                                    <Typography
-                                                        variant="h2"
-                                                        sx={{ textDecoration: 'underline 3px', pb: 3 }}
-                                                        className="hover"
-                                                        fontSize={{ xs: '1rem', sm: '1.5rem', md: '2rem', lg: '3rem' }}
-                                                    >
-                                                        Authenticity
-                                                    </Typography>
-                                                </Box>
-                                            </Fade>
-                                        }
-                                    </VisibilitySensor>
-
-                                    <VisibilitySensor>
-                                        {({ isVisible }) =>
-                                            <Fade in={isVisible} direction="down" timeout={1000}>
-                                                <Box>
-                                                    <Typography
-                                                        variant="h2"
-                                                        sx={{ textDecoration: 'underline 3px', pb: 3 }}
-                                                        className="hover"
-                                                        fontSize={{ xs: '1rem', sm: '1.5rem', md: '2rem', lg: '3rem' }}
-                                                    >
-                                                        Reliability
-                                                    </Typography>
-                                                </Box>
-                                            </Fade>
-                                        }
-                                    </VisibilitySensor>
-
-                                    <VisibilitySensor>
-                                        {({ isVisible }) =>
-                                            <Fade in={isVisible} direction="down" timeout={1000}>
-                                                <Box>
-                                                    <Typography
-                                                        variant="h2"
-                                                        sx={{ textDecoration: 'underline 3px', pb: 3 }}
-                                                        className="hover"
-                                                        fontSize={{ xs: '1rem', sm: '1.5rem', md: '2rem', lg: '3rem' }}
-                                                    >
-                                                        Optimism
-                                                    </Typography>
-                                                </Box>
-                                            </Fade>
-                                        }
-                                    </VisibilitySensor>
-                                </Container>
-                            </Container>
-                        </Grid>
-                    </Grid>
-
-                </Box>
-
-                <Box
-                    style={{
-                        backgroundImage: `url(${GlassesBG})`,
-                        backgroundColor: "#B5BB9F",
-                        backgroundSize: "cover",
-                        height: "80vh"
-                    }} >
-                    <Grid container spacing={0} className="middle">
                         <Grid item lg={6} md={6} sm={6} xs={6} display={{ xs: 'none', sm: 'none', md: 'none', lg: 'block' }}>
                             <Container sx={{ width: '50%' }} >
 
@@ -448,7 +400,7 @@ export default function Album(props) {
                                                 <Typography
                                                     className="h2"
                                                     variant="overline"
-                                                    fontSize="25px"
+                                                    fontSize={{ xs: '1rem', sm: '1.5rem', md: '1.5rem', lg: '1.2rem' }}
                                                 >
                                                     To create delicious,
                                                     roaring ciders, that
@@ -469,7 +421,7 @@ export default function Album(props) {
                                                 <Typography
                                                     className="h2"
                                                     variant="overline"
-                                                    fontSize="25px"
+                                                    fontSize={{ xs: '1rem', sm: '1.5rem', md: '1.5rem', lg: '1.2rem' }}
                                                 >
                                                     To promote exploration
                                                     and personalization in
@@ -482,50 +434,23 @@ export default function Album(props) {
                                 </VisibilitySensor>
                             </Container>
                         </Grid>
-                        <Grid item lg={6} md={6} sm={6} xs={6} >
-                            <Container >
-                                <Box>
-                                    <Typography
-                                        className="baikal"
-                                        variant="overline"
-                                        fontSize={{ xs: '1rem', sm: '1.5rem', md: '2rem', lg: '1.5rem' }}
-                                    >
-                                        <b>Our Personality</b> is made up of
-                                        the four words our friends would
-                                        use to describe us.
-                                    </Typography>
-                                </Box>
-                                <Box
-                                    component="img"
-                                    sx={{
-                                        width: { xs: '50%', sm: '25%', md: '18%', lg: '60%' },
-                                    }}
-                                    alt="HB_Sea"
-                                    src="/images/Apple_Cut.png"
-                                />
-                                <Box>
-                                    <Typography
-                                        className="baikal"
-                                        variant="overline"
-                                        fontSize={{ xs: '1rem', sm: '1.5rem', md: '2rem', lg: '1.5rem' }}
-                                    >
-                                        <b>Our Tone</b> influences the laguage
-                                        we use when interacting with our
-                                        customer.
-                                    </Typography>
-                                </Box>
-
-                            </Container>
-                        </Grid>
                     </Grid>
 
                 </Box>
+
+
             </main>
             {/* Footer */}
-            <Box sx={{ bgcolor: 'background.paper', p: 6 }} component="footer">
-                <Typography variant="h6" align="center" gutterBottom>
-                    FIND YOUR SHORELINE
+            <Box sx={{ bgcolor: 'background.paper', pt: 4 }} component="footer" className="center">
+                <IconButton href="https://instagram.com" target="_blank">
+                    <InstagramIcon />
+                </IconButton>
+                <Typography fontFamily="Baikal" align="center" sx={{ pb: 4 }}>
+                    <Link href="mailto: hello@drinkshoreline.com">HELLO@DRINKSHORELINE.COM</Link>
                 </Typography>
+                <Divider />
+
+
                 <Copyright />
             </Box>
             {/* End footer */}

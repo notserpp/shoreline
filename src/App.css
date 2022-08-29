@@ -15,7 +15,7 @@
 
 @font-face {
   font-family: 'Migra';
-  src: url("../public/fonts/MigraItalic-ExtralightItalic.otf") format("opentype");
+  src: url("../public/fonts/Migra-Extrabold.otf") format("opentype");
 }
 
 
@@ -30,76 +30,11 @@
   src: url("../public/fonts/BaikalTrial-Light.otf") format("opentype");
 }
 
-
-@keyframes slide-left {
-  from {
-    margin-left: 50%;
-    opacity: 0%;
-  }
-
-  to {
-    margin-left: 0%;
-    opacity: 100%;
-  }
+@font-face {
+  font-family: 'Baikal-Bold';
+  src: url("../public/fonts/BaikalTrial-Medium.otf") format("opentype");
 }
 
-@keyframes slide-right {
-  from {
-    margin-right: 50%;
-    opacity: 0%;
-  }
-
-  to {
-    margin-right: 0%;
-    opacity: 100%;
-  }
-}
-
-@keyframes slide-left-50-p {
-  from {
-    margin-left: 80%;
-    opacity: 0%;
-  }
-
-  to {
-    margin-left: 30%;
-    opacity: 100%;
-  }
-}
-
-@keyframes slide-left-opacity-50 {
-  from {
-    margin-left: 50%;
-    opacity: 0%;
-  }
-
-  to {
-    margin-left: 0%;
-    opacity: 50%;
-  }
-}
-
-@keyframes slide-left-opacity-60 {
-  from {
-    margin-left: 25%;
-    opacity: 0%;
-  }
-
-  to {
-    margin-left: 0%;
-    opacity: 60%;
-  }
-}
-
-@keyframes slide-down {
-  from {
-    margin-bottom: 25%;
-  }
-
-  to {
-    margin-bottom: 0%;
-  }
-}
 
 @keyframes opacity-10 {
   from {
@@ -116,6 +51,10 @@
   animation: opacity-10 2.1s;  
 }
 
+.london-dry-can-carousel {
+  width: 20% !important;
+}
+
 .london-dry-can {
   position: absolute;
   width: 40%;
@@ -128,14 +67,24 @@
   position: relative;
 }
 
-.slide-left{
-  animation: slide-left 2s;
+
+.rotate-20{
+  transform: rotate(25deg);
+  transition: 1s;
 }
 
-.slide-right{
-  animation: slide-right 2s;
+.rotate-20:hover{
+  transform: rotate(0deg);
 }
 
+.rotate-0{
+  transform: rotate(25deg);
+  transition: 1s;
+}
+
+.rotate-0:hover{
+  transform: rotate(60deg);
+}
 
 .migra {
   font-family: 'Migra' !important;
@@ -195,9 +144,6 @@
   
 }
 
-.slide-down{
-  animation: slide-left 2.1;
-}
 
 .nav-text:hover {
   transform: scale(1.1);
@@ -277,6 +223,10 @@
   margin: auto;
   width: 100%;
   height: 80vh;
+}
+
+.center {
+  text-align: center;
 }
 
 .center{
