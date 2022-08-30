@@ -80,8 +80,10 @@ export default function Album(props) {
 
     const londonRef = React.useRef(null)
     const hibiscusRef = React.useRef(null)
+    const aboutRef = React.useRef(null)
     const londonScroll = () => londonRef.current.scrollIntoView()
     const hibiscusScroll = () => hibiscusRef.current.scrollIntoView()
+    const aboutScroll = () => aboutRef.current.scrollIntoView()
 
     const [checked, setChecked] = React.useState(false);
 
@@ -109,7 +111,7 @@ export default function Album(props) {
                             </Typography>
                         </MenuItem>
                         <MenuItem className="menu-item">
-                            <Typography color="inherit" fontFamily="Carter One" noWrap className="nav-text" fontSize={{ xs: '1rem', sm: '1.5rem', md: '2rem', lg: '1.5rem' }} display={{ xs: 'none', sm: 'none', md: 'block', lg: 'block' }}>
+                            <Typography color="inherit" fontFamily="Carter One" noWrap className="nav-text" onClick={aboutScroll} fontSize={{ xs: '1rem', sm: '1.5rem', md: '2rem', lg: '1.5rem' }} display={{ xs: 'none', sm: 'none', md: 'block', lg: 'block' }}>
                                 About
                             </Typography>
                         </MenuItem>
@@ -361,6 +363,7 @@ export default function Album(props) {
                                         className="baikal"
                                         variant="overline"
                                         fontSize={{ xs: '1rem', sm: '1.5rem', md: '2rem', lg: '1.5rem' }}
+                                        ref={aboutRef}
                                     >
                                         <b>Our Values</b> are the core set of
                                         beliefs that we stand for and
