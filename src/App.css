@@ -130,6 +130,11 @@
   font-size: 500px;
 }
 
+.shoreline {
+  display: none;
+}
+
+
 
 .nav-text {
   transition: transform .2s;
@@ -143,6 +148,13 @@
   
 }
 
+.over21 {
+  display: block;
+}
+
+.over21textno {
+  display: none;
+}
 
 .nav-text:hover {
   transform: scale(1.1);

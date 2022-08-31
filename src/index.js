@@ -4,10 +4,12 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Shoreline from './Shoreline';
+import Over21 from './over21';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    <Over21 />
     <Shoreline />
   </React.StrictMode>
 );
