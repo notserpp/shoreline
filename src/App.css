@@ -134,7 +134,9 @@
   display: none;
 }
 
-
+.text-shadow{
+  text-shadow: 2px 2px 8px black !important;
+}
 
 .nav-text {
   transition: transform .2s;

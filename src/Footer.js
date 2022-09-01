@@ -8,10 +8,10 @@ import { Divider } from '@mui/material';
 function Copyright() {
     return (
 
-        <Typography variant="body2" color="text.secondary" align="center">
+        <Typography variant="body2" align="center">
             {'Copyright © '}
-            <Link color="inherit" href="https://mui.com/">
-                Shoreline
+            <Link color="inherit" underline="none" href="https://mui.com/">
+                Shoreline Beverages
             </Link>{' '}
             {new Date().getFullYear()}
             {'.'}
@@ -24,14 +24,13 @@ export default function Footer() {
 
     return (
         <div className="shoreline">
-            <Box sx={{ bgcolor: 'background.paper', pt: 4 }} component="footer" className="center">
+            <Box sx={{ bgcolor: 'transparent', pt: 2 }} component="footer" className="center">
                 <IconButton href="https://www.instagram.com/drinkshoreline/" target="_blank">
                     <InstagramIcon />
                 </IconButton>
-                <Typography fontFamily="Carter One" align="center" sx={{ pb: 4 }}>
-                    <Link href="mailto: hello@drinkshoreline.com">HELLO@DRINKSHORELINE.COM</Link>
+                <Typography fontFamily="Carter One" align="center" sx={{ pb: 2 }}>
+                    <Link href="mailto: hello@drinkshoreline.com" underline="none" sx={{ color: 'black' }}>HELLO@DRINKSHORELINE.COM</Link>
                 </Typography>
-                <Divider />
                 <Copyright />
             </Box>
         </div>

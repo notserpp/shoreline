@@ -20,7 +20,6 @@ root.render(
     <LondonDry />
     <BerryHibiscus />
     <About />
-    <Footer />
   </React.StrictMode>
 );
 

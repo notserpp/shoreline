@@ -4,7 +4,7 @@ import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
-import Energy from './Energy.jpg'
+import cans from './cans.jpg'
 import { createTheme, ThemeProvider, responsiveFontSizes } from '@mui/material/styles';
 import { borderColor } from '@mui/system';
 
@@ -35,16 +35,16 @@ export default function Over21(props) {
     return (
         <div className="over21">
             <ThemeProvider theme={theme}>
-                <Box style={{ height: '100vh', backgroundImage: `url(${Energy})`, backgroundSize: "auto", backgroundRepeat: "no-repeat" }} className="center">
+                <Box style={{ height: '100vh', backgroundImage: `url(${cans})`, backgroundSize: "cover", backgroundRepeat: "no-repeat", backgroundPosition: "0 0" }} className="center">
                     <Grid container>
-                        <Grid item lg={6.5}>
+                        <Grid item lg={2}>
                         </Grid>
                         <Grid item>
                             <div className="over21text">
-                                <Container sx={{ pt: 50 }}>
-                                    <Typography fontFamily="Titan One" fontSize="2rem" color="white">Slow down there Captain.</Typography>
-                                    <Typography fontFamily="Titan One" fontSize="1.5rem" color="white">Are you over 21?</Typography>
-                                    <Button variant="outlined" sx={{
+                                <Container sx={{ pt: 30 }}>
+                                    <Typography fontFamily="Titan One" fontSize="2rem" color="white" className="text-shadow" >Slow down there Captain.</Typography>
+                                    <Typography fontFamily="Titan One" fontSize="1.5rem" color="white" className="text-shadow">Are you over 21?</Typography>
+                                    <Button className="text-shadow" variant="outlined" sx={{
                                         mr: 2.5, mt: 1, borderColor: 'white', color: "white", '&:hover': {
                                             borderColor: 'white',
                                             transform: 'scale(1.1)'
@@ -52,7 +52,7 @@ export default function Over21(props) {
                                     }}
                                         onClick={() => isOver21(true)}
                                     > Yes</Button>
-                                    <Button variant="outlined" sx={{
+                                    <Button className="text-shadow" variant="outlined" sx={{
                                         mt: 1, borderColor: 'white', color: "white", '&:hover': {
                                             borderColor: 'white',
                                             transform: 'scale(1.1)'

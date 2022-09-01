@@ -30,7 +30,7 @@ export default function Shoreline(props) {
                         color: "#f5f5f5"
                     }} >
                     <Grid container spacing={2} className="middle">
-                        <Grid item lg={7} md={10} sm={10} xs={12} >
+                        <Grid item lg={12} md={12} sm={12} xs={12} >
                             <Container >
 
                                 <VisibilitySensor>
@@ -85,7 +85,7 @@ export default function Shoreline(props) {
                             </Container>
 
                         </Grid>
-                        <Grid item lg={5} md={8} sm={8} xs={8} display={{ xs: 'none', sm: 'none', md: 'none', lg: 'block' }}>
+                        {/* <Grid item lg={5} md={8} sm={8} xs={8} display={{ xs: 'none', sm: 'none', md: 'none', lg: 'block' }}>
                             <Container className="box-can-container">
                                 <Box
                                     component="img"
@@ -107,7 +107,7 @@ export default function Shoreline(props) {
                                     className="london-dry-can"
                                 />
                             </Container>
-                        </Grid>
+                        </Grid> */}
                     </Grid>
 
                 </Box>

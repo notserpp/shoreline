@@ -7,6 +7,7 @@ import Fade from '@mui/material/Fade';
 import Container from '@mui/material/Container';
 import GlassesBG from './openwater.jpg';
 import { Divider } from '@mui/material';
+import Footer from './Footer';
 
 
 export default function About() {
@@ -15,7 +16,6 @@ export default function About() {
         <div className="shoreline">
             <Box
                 style={{
-                    backgroundColor: "#FFF7F0",
                     backgroundSize: "cover",
                     height: "80vh",
                     backgroundImage: `url(${GlassesBG})`,
@@ -48,7 +48,6 @@ export default function About() {
                     </Grid>
                     <Grid item lg={6} md={6} sm={6} xs={6} display={{ xs: 'none', sm: 'none', md: 'none', lg: 'block' }}>
                         <Container sx={{ width: '50%' }}>
-
                             <VisibilitySensor>
                                 {({ isVisible }) =>
                                     <Fade in={isVisible} direction="down" timeout={1000}>
@@ -107,9 +106,15 @@ export default function About() {
                             </VisibilitySensor>
                         </Container>
                     </Grid>
+                    <Grid item lg={6} md={6} sm={6} xs={6} display={{ xs: 'none', sm: 'none', md: 'none', lg: 'block' }}>
+                        <Container sx={{ width: '50%' }}>
+                            <Footer />
+                        </Container>
+                    </Grid>
                 </Grid>
+
             </Box>
-        </div>
+        </div >
     )
 
 }

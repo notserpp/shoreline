@@ -26,7 +26,7 @@ export default function BerryHibiscus() {
                             fontSize="1.2rem"
                             color="white"
                         >
-                            An approachable dry cider with a bright acidity profile balanced by just a touch of apple sweetness. The profile begins with notes of crisp honeyed apples, the finish is reminiscent of a refreshing sauvignon blanc. Easy drinking and clean, this cider would be as at home next to a charcuterie board as it is with barbecue fare.
+                            A fruit forward cider with a perfect amount of sweetness. Decadent notes of blueberry jam, red berries, and gentle tannic notes from floral Egyptian hibiscus. An off-dry finish prepares you for the next sip without becoming imposing on your palate.
                         </Typography>
                         <Typography
                             sx={{ pt: 2 }}
