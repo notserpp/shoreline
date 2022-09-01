@@ -19,8 +19,10 @@ function isOver21(input) {
     over21 = input
     console.log(over21)
     if (over21) {
-        document.getElementsByClassName('shoreline')[0].style.display = "block"
         document.getElementsByClassName('over21')[0].style.display = "none"
+        document.querySelectorAll('.shoreline').forEach(function (el) {
+            el.style.display = 'block';
+        });
     }
     else {
         document.getElementsByClassName('over21text')[0].style.display = "none"

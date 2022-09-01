@@ -5,12 +5,22 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Shoreline from './Shoreline';
 import Over21 from './over21';
+import Navbar from './Navbar';
+import LondonDry from './LondonDry';
+import BerryHibiscus from './BerryHibiscus';
+import Footer from './Footer';
+import About from './About';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    <Navbar />
     <Over21 />
     <Shoreline />
+    <LondonDry />
+    <BerryHibiscus />
+    <About />
+    <Footer />
   </React.StrictMode>
 );
 
