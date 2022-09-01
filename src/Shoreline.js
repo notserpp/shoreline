@@ -61,27 +61,6 @@ export default function Shoreline(props) {
                                         </Fade>
                                     }
                                 </VisibilitySensor>
-                                <Container className="age-restriction-box animation" sx={{ pt: 3 }}>
-                                    <VisibilitySensor>
-                                        {({ isVisible }) =>
-                                            <Fade in={isVisible} direction="down" timeout={1000}>
-                                                <Box sx={{ border: 1, borderRadius: '5px', p: 1 }}  >
-                                                    <Typography
-                                                        fontSize={{ xs: '.5rem', sm: '.5rem', md: '.5rem', lg: '1rem' }}
-                                                        variant="h6"
-                                                        className="age-restriction"
-                                                        align="center"
-                                                        whiteSpace="nowrap"
-                                                        overflow="hidden"
-                                                    >
-                                                        MUST BE 21+ TO ENTER
-                                                    </Typography>
-                                                </Box>
-                                            </Fade>
-                                        }
-                                    </VisibilitySensor>
-
-                                </Container>
                             </Container>
 
                         </Grid>
