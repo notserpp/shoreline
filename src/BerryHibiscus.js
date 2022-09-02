@@ -18,6 +18,7 @@ export default function BerryHibiscus() {
                             fontFamily="Rubik Mono One"
                             color="white"
                             sx={{ fontSize: { lg: '2rem', md: '1.5rem', sm: '1.5rem', xs: '1.5rem' } }}
+                            id="berry-ref"
                         >
                             The Hibiscus Blueberry
                         </Typography>
@@ -55,12 +56,12 @@ export default function BerryHibiscus() {
                                             alt="Hibiscus"
                                             src="/images/hibiscus_nobg.png"
                                             className="rotate-20"
-                                            id="berry-ref"
+
                                         />
                                         <Typography
                                             fontFamily="Titan One"
                                             color="white"
-                                            sx={{ fontSize: { lg: '1rem', md: '1rem', sm: '1rem', xs: '1rem' } }}
+                                            sx={{ fontSize: { lg: '1rem', md: '1rem', sm: '1rem', xs: '1.1rem' } }}
                                         >
                                             5.4% ABV | 6G Sugar | Made with real fruit | Gluten free
                                         </Typography>

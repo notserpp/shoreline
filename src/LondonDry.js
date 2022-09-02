@@ -32,7 +32,7 @@ export default function LondonDry() {
                                         />
                                         <Typography
                                             fontFamily="Titan One"
-                                            sx={{ fontSize: { lg: '1rem', md: '1rem', sm: '1rem', xs: '1rem' } }}
+                                            sx={{ fontSize: { lg: '1rem', md: '1rem', sm: '1rem', xs: '1.1rem' } }}
                                         >
                                             6.6% ABV | 1G Sugar
                                         </Typography>

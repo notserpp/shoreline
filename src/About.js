@@ -28,6 +28,7 @@ export default function About() {
                                     <Typography
                                         fontFamily="Titan One"
                                         fontSize={{ xs: '1.5rem', sm: '1.5rem', md: '2rem', lg: '3rem' }}
+                                        id="about-ref"
                                     >
                                         MEET SHORELINE
                                     </Typography>
@@ -72,7 +73,6 @@ export default function About() {
                                                     className="h2"
                                                     variant="overline"
                                                     fontSize={{ xs: '1rem', sm: '1.5rem', md: '1.5rem', lg: '1.2rem' }}
-                                                    id="about-ref"
                                                 >
                                                     To create delicious,
                                                     roaring ciders, that
