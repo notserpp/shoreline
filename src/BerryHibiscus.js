@@ -11,20 +11,20 @@ export default function BerryHibiscus() {
 
     return (
         <div className="shoreline">
-            <Box sx={{ backgroundColor: "#8c1d24", height: '70vh' }}>
+            <Box sx={{ backgroundColor: "#8c1d24", height: '70vh', p: 2 }}>
                 <Grid container spacing={2} className="center" >
                     <Grid item lg={6}>
                         <Typography
                             fontFamily="Rubik Mono One"
-                            fontSize="3rem"
                             color="white"
+                            sx={{ fontSize: { lg: '2rem', md: '1.5rem', sm: '1.5rem', xs: '1.5rem' } }}
                         >
                             The Hibiscus Blueberry
                         </Typography>
                         <Typography
                             fontFamily="Baikal"
-                            fontSize="1.2rem"
                             color="white"
+                            sx={{ fontSize: { lg: '1.5rem', md: '1.5rem', sm: '1.5rem', xs: '1rem' } }}
                         >
                             A fruit forward cider with a perfect amount of sweetness. Decadent notes of blueberry jam, red berries, and gentle tannic notes from floral Egyptian hibiscus. An off-dry finish prepares you for the next sip without becoming imposing on your palate.
                         </Typography>
@@ -50,7 +50,7 @@ export default function BerryHibiscus() {
                                         <Box
                                             component="img"
                                             sx={{
-                                                width: { xs: '20%', sm: '20%', md: '20%', lg: '70%' },
+                                                width: { xs: '40%', sm: '40%', md: '40%', lg: '70%' },
                                             }}
                                             alt="Hibiscus"
                                             src="/images/hibiscus_nobg.png"
@@ -60,6 +60,7 @@ export default function BerryHibiscus() {
                                         <Typography
                                             fontFamily="Titan One"
                                             color="white"
+                                            sx={{ fontSize: { lg: '1rem', md: '1rem', sm: '1rem', xs: '1rem' } }}
                                         >
                                             5.4% ABV | 6G Sugar | Made with real fruit | Gluten free
                                         </Typography>

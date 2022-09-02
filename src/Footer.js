@@ -24,16 +24,16 @@ export default function Footer() {
 
     return (
         <div className="shoreline">
-            <Box sx={{ bgcolor: 'transparent', pt: 2 }} component="footer" className="center">
+            <Box sx={{ bgcolor: 'transparent' }} component="footer" className="center">
                 <IconButton href="https://www.instagram.com/drinkshoreline/" target="_blank">
                     <InstagramIcon />
                 </IconButton>
-                <Typography fontFamily="Carter One" align="center" sx={{ pb: 2 }}>
+                <Typography fontFamily="Carter One" align="center" sx={{ pb: 2, }}>
                     <Link href="mailto: hello@drinkshoreline.com" underline="none" sx={{ color: 'black' }}>HELLO@DRINKSHORELINE.COM</Link>
                 </Typography>
                 <Copyright />
             </Box>
-        </div>
+        </div >
     )
 }
 

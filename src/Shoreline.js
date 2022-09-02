@@ -52,7 +52,7 @@ export default function Shoreline(props) {
                                             <Box
                                                 component="img"
                                                 sx={{
-                                                    width: { xs: '50%', sm: '50%', md: '50%', lg: '50%' },
+                                                    width: { xs: '70%', sm: '60%', md: '50%', lg: '50%' },
                                                 }}
                                                 alt="Shoreline"
                                                 src="/images/Shoreline2.png"
@@ -62,33 +62,8 @@ export default function Shoreline(props) {
                                     }
                                 </VisibilitySensor>
                             </Container>
-
                         </Grid>
-                        {/* <Grid item lg={5} md={8} sm={8} xs={8} display={{ xs: 'none', sm: 'none', md: 'none', lg: 'block' }}>
-                            <Container className="box-can-container">
-                                <Box
-                                    component="img"
-                                    sx={{
-                                        width: { xs: '50%', sm: '25%', md: '18%', lg: '80%' },
-                                    }}
-                                    alt="Hibiscus."
-                                    src="/images/LondonDry.png"
-                                    className="london-dry"
-                                />
-                                <Box
-                                    component="img"
-                                    sx={{
-                                        width: { xs: '50%', sm: '25%', md: '18%', lg: '40%' },
-                                        display: 'none'
-                                    }}
-                                    alt="Hibiscus."
-                                    src="/images/LondonDry_Final.png"
-                                    className="london-dry-can"
-                                />
-                            </Container>
-                        </Grid> */}
                     </Grid>
-
                 </Box>
 
 

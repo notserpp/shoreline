@@ -4,7 +4,8 @@ import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
-import cans from './cans.jpg'
+import cans from './cans.jpg';
+import cansMobile from './cans-mobile.jpg';
 import { createTheme, ThemeProvider, responsiveFontSizes } from '@mui/material/styles';
 import { borderColor } from '@mui/system';
 
@@ -35,7 +36,13 @@ export default function Over21(props) {
     return (
         <div className="over21">
             <ThemeProvider theme={theme}>
-                <Box style={{ height: '100vh', backgroundImage: `url(${cans})`, backgroundSize: "cover", backgroundRepeat: "no-repeat", backgroundPosition: "0 0" }} className="center">
+                <Box style={{ height: '100vh', backgroundRepeat: "no-repeat", }} className="center"
+                    sx={{
+                        backgroundSize: { lg: "cover", md: "cover", sm: "cover", xs: "cover" },
+                        backgroundImage: { lg: `url(${cans})`, md: `url(${cans})`, sm: `url(${cans})`, xs: `url(${cansMobile})` },
+                        backgroundPosition: { xs: '40%' }
+
+                    }}>
                     <Grid container>
                         <Grid item lg={2}>
                         </Grid>
