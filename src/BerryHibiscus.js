@@ -11,7 +11,7 @@ export default function BerryHibiscus() {
 
     return (
         <div className="shoreline">
-            <Box sx={{ backgroundColor: "#8c1d24", height: '75vh', p: 2 }} id="berry-ref">
+            <Box sx={{ backgroundColor: "#8c1d24", height: '80vh', p: 2 }} id="berry-ref">
                 <Grid container spacing={2} className="center" >
                     <Grid item lg={6}>
                         <Typography
@@ -46,7 +46,7 @@ export default function BerryHibiscus() {
                         <VisibilitySensor>
                             {({ isVisible }) =>
                                 <Fade in={isVisible} direction="down" timeout={1000}>
-                                    <Container sx={{ pt: 3 }}>
+                                    <Container sx={{ pt: 3, pb: 3 }}>
                                         <Box
                                             component="img"
                                             sx={{
