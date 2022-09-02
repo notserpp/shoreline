@@ -11,7 +11,7 @@ export default function BerryHibiscus() {
 
     return (
         <div className="shoreline">
-            <Box sx={{ backgroundColor: "#8c1d24", height: '70vh', p: 2 }}>
+            <Box sx={{ backgroundColor: "#8c1d24", height: '75vh', p: 2 }}>
                 <Grid container spacing={2} className="center" >
                     <Grid item lg={6}>
                         <Typography
@@ -24,7 +24,7 @@ export default function BerryHibiscus() {
                         <Typography
                             fontFamily="Baikal"
                             color="white"
-                            sx={{ fontSize: { lg: '1.5rem', md: '1.5rem', sm: '1.5rem', xs: '1rem' } }}
+                            sx={{ fontSize: { lg: '1.5rem', md: '1.5rem', sm: '1.25rem', xs: '1rem' } }}
                         >
                             A fruit forward cider with a perfect amount of sweetness. Decadent notes of blueberry jam, red berries, and gentle tannic notes from floral Egyptian hibiscus. An off-dry finish prepares you for the next sip without becoming imposing on your palate.
                         </Typography>

@@ -23,7 +23,7 @@ export default function LondonDry() {
                                         <Box
                                             component="img"
                                             sx={{
-                                                width: { xs: '40%', sm: '40%', md: '40%', lg: '70%' },
+                                                width: { xs: '40%', sm: '40%', md: '40%', lg: '60%' },
                                             }}
                                             alt="Hibiscus"
                                             src="/images/london_nobg.png"
