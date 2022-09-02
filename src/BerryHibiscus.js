@@ -11,14 +11,13 @@ export default function BerryHibiscus() {
 
     return (
         <div className="shoreline">
-            <Box sx={{ backgroundColor: "#8c1d24", height: '75vh', p: 2 }}>
+            <Box sx={{ backgroundColor: "#8c1d24", height: '75vh', p: 2 }} id="berry-ref">
                 <Grid container spacing={2} className="center" >
                     <Grid item lg={6}>
                         <Typography
                             fontFamily="Rubik Mono One"
                             color="white"
                             sx={{ fontSize: { lg: '2rem', md: '1.5rem', sm: '1.5rem', xs: '1.5rem' } }}
-                            id="berry-ref"
                         >
                             The Hibiscus Blueberry
                         </Typography>

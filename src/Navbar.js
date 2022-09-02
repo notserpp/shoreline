@@ -34,7 +34,10 @@ export default function Navbar(props, { londonRef }) {
     }
     function scrollBerry() {
         var element = document.getElementById("berry-ref");
-        element.scrollIntoView()
+        element.scrollIntoView({
+            behavior: 'smooth',
+            block: 'end',
+        })
     }
     function scrollAbout() {
         var element = document.getElementById("about-ref");
