@@ -13,7 +13,7 @@ export default function LondonDry() {
 
     return (
         <div className="shoreline">
-            <Box sx={{ backgroundColor: "#FFF7F0", height: '70vh', p: 2 }} >
+            <Box sx={{ backgroundColor: "#FFF7F0", height: '80vh', p: 2 }} >
                 <Grid container spacing={2} className="center" >
                     <Grid item lg={6}>
                         <VisibilitySensor>
@@ -32,7 +32,7 @@ export default function LondonDry() {
                                         />
                                         <Typography
                                             fontFamily="Titan One"
-                                            sx={{ fontSize: { lg: '1rem', md: '1rem', sm: '1rem', xs: '1.1rem' } }}
+                                            sx={{ fontSize: { lg: '1.5rem', md: '1.5rem', sm: '1.25rem', xs: '1.5vh' } }}
                                         >
                                             6.6% ABV | 1G Sugar
                                         </Typography>
@@ -50,19 +50,20 @@ export default function LondonDry() {
                         </Typography>
                         <Typography
                             fontFamily="Baikal"
-                            sx={{ fontSize: { lg: '1.5rem', md: '1.5rem', sm: '1.25rem', xs: '1rem' } }}
+                            sx={{ fontSize: { lg: '1.45rem', md: '1.5rem', sm: '1.25rem', xs: '1.5vh' } }}
 
                         >
                             An approachable dry cider with a bright acidity profile balanced by just a touch of apple sweetness. The profile begins with notes of crisp honeyed apples, the finish is reminiscent of a refreshing sauvignon blanc. Easy drinking and clean, this cider is enjoyed as much on the beach with a charcuterie board as it is with barbecue fare.
                         </Typography>
                         <Typography
-                            sx={{ pt: 2 }}
+                            sx={{ pt: 2, fontSize: { lg: '1.25rem', md: '1.5rem', sm: '1.25rem', xs: '1.5vh' } }}
                             fontFamily="Baikal"
                         >
                             Suggested Food Pairings:
                         </Typography>
                         <Typography
                             fontFamily="Baikal-Bold"
+                            sx={{ fontSize: { lg: '1.25rem', md: '1.5rem', sm: '1.25rem', xs: '1.5vh' } }}
                         >
                             Aged Hard Cheeses | Smoked Brisket
                         </Typography>

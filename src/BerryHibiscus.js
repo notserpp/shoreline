@@ -24,12 +24,12 @@ export default function BerryHibiscus() {
                         <Typography
                             fontFamily="Baikal"
                             color="white"
-                            sx={{ fontSize: { lg: '1.5rem', md: '1.5rem', sm: '1.25rem', xs: '1rem' } }}
+                            sx={{ fontSize: { lg: '1.35rem', md: '1.5rem', sm: '1.25rem', xs: '1.5vh' } }}
                         >
                             A fruit forward cider with a perfect amount of sweetness. Decadent notes of blueberry jam, red berries, and gentle tannic notes from floral Egyptian hibiscus. An off-dry finish prepares you for the next sip without becoming imposing on your palate.
                         </Typography>
                         <Typography
-                            sx={{ pt: 2 }}
+                            sx={{ pt: 2, fontSize: { lg: '1.25rem', md: '1.5rem', sm: '1.25rem', xs: '1.5vh' } }}
                             fontFamily="Baikal"
                             color="white"
                         >
@@ -38,6 +38,7 @@ export default function BerryHibiscus() {
                         <Typography
                             fontFamily="Baikal-Bold"
                             color="white"
+                            sx={{ fontSize: { lg: '1.25rem', md: '1.5rem', sm: '1.25rem', xs: '1.5vh' } }}
                         >
                             Tea Cakes | Roasted Pork | Bloomy Rind Cheeses
                         </Typography>
@@ -60,7 +61,7 @@ export default function BerryHibiscus() {
                                         <Typography
                                             fontFamily="Titan One"
                                             color="white"
-                                            sx={{ fontSize: { lg: '1rem', md: '1rem', sm: '1rem', xs: '1.1rem' } }}
+                                            sx={{ fontSize: { lg: '1.5rem', md: '1.5rem', sm: '1.25rem', xs: '1.5vh' } }}
                                         >
                                             5.4% ABV | 6G Sugar | Made with real fruit | Gluten free
                                         </Typography>
