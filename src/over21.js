@@ -41,7 +41,7 @@ export default function Over21(props) {
                         backgroundSize: { lg: "cover", md: "cover", sm: "cover", xs: "cover" },
                         backgroundImage: { lg: `url(${cans})`, md: `url(${cans})`, sm: `url(${cans})`, xs: `url(${cansMobile})` },
                         backgroundPosition: { xs: '40%' },
-                        backgroundColor: "black"
+                        backgroundColor: "rgb(255, 247, 240)"
 
                     }}>
                     <Grid container>

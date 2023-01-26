@@ -27,7 +27,7 @@ export default function Shoreline(props) {
                         backgroundImage: `url(${BeachBG})`,
                         backgroundSize: "cover",
                         height: "100vh",
-                        backgroundColor: "black"
+                        backgroundColor: "rgb(255, 247, 240)"
                     }} >
                     <Grid container spacing={2} className="middle">
                         <Grid item lg={12} md={12} sm={12} xs={12} >
