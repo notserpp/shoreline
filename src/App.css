@@ -46,6 +46,10 @@
   }
 }
 
+body {
+  background-color: black;
+}
+
 .london-dry {
   width: 80%;
   animation: opacity-10 2.1s;  
